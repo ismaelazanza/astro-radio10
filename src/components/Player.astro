@@ -1,0 +1,77 @@
+---
+import ScriptPlayer from "./ScriptPlayer.astro";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Player de Radio</title>
+        <meta name="viewport" content="width-device-width, initial-scale-1.0" />
+        <style>
+            body,
+            html {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        </style></head
+    >
+
+    <body>
+        <div
+            id="lunaradio"
+            style="width:100%; height:85px;
+-webkit-border-top-left-radius: 0px;
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border: none;"
+        >
+            <ScriptPlayer/>
+        
+            <script is:inline>
+                $("#lunaradio").lunaradio({
+                    userinterface: "small",
+                    backgroundcolor: "#0c122c",
+                    fontcolor: "#ffffff",
+                    hightlightcolor: "#c9225d",
+                    fontname: "Barlow",
+                    googlefont: "Barlow",
+                    fontratio: "0.4",
+                    radioname: "Radio 10 | En estado natural",
+                    scroll: "true",
+                    coverimage: "https://playerhd.eu/radio/radio10/460x0w.webp",
+                    coverstyle: "circle",
+                    usevisualizer: "real",
+                    visualizertype: "6",
+                    itunestoken: "1000lIPN",
+                    metadatatechnic: "corsproxy",
+                    ownmetadataurl: "",
+                    streamurl: "https://sonic.streamseguro.com/8040",
+                    streamtype: "shoutcast2",
+                    icecastmountpoint: "",
+                    radionomyid: "",
+                    radionomyapikey: "",
+                    radiojarid: "",
+                    radiocoid: "sdef46f462",
+                    shoutcastpath: "/stream",
+                    shoutcastid: "1",
+                    streamsuffix: "",
+                    metadatainterval: "20000",
+                    volume: "95",
+                    debug: "false",
+                    usestreamcorsproxy: "true",
+                    corsproxy: "",
+                });
+            </script>
+        </div>
+    </body>
+</html>

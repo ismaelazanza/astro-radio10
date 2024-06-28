@@ -1,0 +1,72 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Player from "../components/Player.astro";
+import "@fontsource-variable/big-shoulders-inline-text";
+import CardTarifario from "../components/CardTarifario.astro";
+---
+
+<Layout title="Radio 10 | Tarifario.">
+    <main class="flex flex-col h-screen justify-between" transition:animate="fade">
+        <header>
+            <Header />
+        </header>
+
+        <section>
+            <h2
+            class="text-white text-6xl font-extrabold text-center fuente-especial leading-[7rem]">
+            Tarifario
+        </h2>
+
+            <section class="contenedor_small mx-auto grid grid-cols-3 gap-4">
+                <CardTarifario
+                    title="Modalidad Cuñas Rotativas"
+                    des1="Cuñas de hasta 30s | $5.00"
+                    des2="Cuñas de hasta 45s | $6.00"
+                    des3="Cuñas de hasta 50s | $7.00"
+                    des4="Costos para conciertos, ferias, fiestas: $10.00"
+                />
+                <CardTarifario
+                    title="Paquetes Mensuales"
+                    des1="6 cuñas diarias de hasta 40s | $100.00"
+                    des2="8 cuñas diarias de hasta 40s | $150.00"
+                    des3="Nota: Periodo mínimo de contrato de 3 meses"
+                />
+                <CardTarifario
+                    title="Mensiones Publicitarias"
+                    des1="1. NOTICIAS: (12h00 a 13h00 y 18h00 a 19h00)"
+                    des2="2. DEPORTES: (06h30 a 08h00 y 13h00 a 14h00)"
+                    des3="Total impactos: 4 por programa Costo mensual: 100.00 USD"
+                />
+            </section>
+
+            <div class="contenedor_small mx-auto mt-8">
+                <h2 class="font-bold text-white">
+                    COBERTURA
+                </h2>
+                <p class="text-white">Yantzaza, Centinela del Cóndor, Paquisha y Nangaritza</p>
+            </div>
+        </section>
+
+        <section transition:persist="media-player">
+            <Player />
+        </section>
+    </main>
+</Layout>
+
+<style>
+    main {
+        background-image: url(../img/1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .fuente-especial {
+        font-family: "Big Shoulders Inline Text Variable", system-ui;
+    }
+
+    .contenedor_small {
+        width: 70%;
+    }
+</style>

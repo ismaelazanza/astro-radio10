@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/CardTarifario.astro';
+import Header from '../components/Header.astro';
+import Player from '../components/Player.astro';
+import '@fontsource-variable/big-shoulders-inline-text';
+---
+
+<Layout title="Radio 10 | Nosotros.">
+	<main class="flex flex-col justify-between"  transition:animate="fade">
+
+		<header>
+			<Header/>
+		</header>
+
+		<h2 class="text-white text-6xl font-extrabold text-center fuente-especial leading-[7rem]">Nosotros</h2>
+
+		<section class="grid grid-cols-12 container mx-auto">
+			<div>
+
+			</div>
+			<div class="col-[4/10]">
+				<p class="text-white font-semibold">Somos un moderno medio de comunicación que nace en Yantzaza el 28 de junio de 2021 con un estilo juvenil y una parrilla que ofrece programas noticiosos, deportivos, culturales, en combinación con música pop y rock.</p><br>
+				<p class="text-white font-semibold">El líder del proyecto es el Mgtr. Israel Guarnizo Toledo, periodista que ha consagrado gran parte de su vida a esta noble profesión con respeto, ética y honestidad. </p><br>
+				<p class="text-white font-semibold">No fue fácil hacer obtener la frecuencia y hacer realidad este sueño personal y de mi familia que abracé hace algunos años por mi condición de periodista profesional. Ha sido una etapa que ha requerido sacrificios y muchas veces hasta incomprensiones, pero la tenaz insistencia y mucha paciencia ha justificado con creces el esfuerzo realizado.</p><br>
+				<p class="text-white font-semibold">Ser periodista y radiodifusor significa dignidad, esfuerzo constante, disciplina y preparación permanente para el cumplimiento del deber de comunicador en este medio de comunicación que cuenta con un excelente grupo de colaboradores, quienes cada día se van perfeccionando para ser mejores y demostrar que estamos preparados para el cumplimiento de nuestra tarea de informar y entretener.</p><br>
+				<p class="text-white font-semibold">La Historia que es -como decía Cicerón- “la testigo de los tiempos, la luz de la verdad, la mensajera de la antigüedad y la maestra de la vida”, hace que mi vocación de periodista haya hecho que me incline por contar con una estación radial que hoy es una realidad.</p><br>
+				<p class="text-white font-semibold">Un medio de comunicación moderno, cuya programación se caracteriza por su variedad para todos los segmentos de la sociedad. La radio tiene sus departamentos de noticias y otras secciones, pero, sin duda el deporte es nuestro fuerte con programaciones en vivo, además de transmisiones del deporte a nivel provincial, nacional e internacional.</p><br>
+				<p class="text-white font-semibold">En nuestro caminar hemos tenido grandes satisfacciones por la acogida del comercio, las instituciones públicas y sus autoridades, y ello, nos compromete a seguir mejorando cada día.</p><br>
+				<p class="text-white font-semibold">Radio 10, 102.1 FM es en la actualidad una emisora sólida y bien posicionada, con excelente rating de sintonía que nos ha convertido en una parte importante en el convivir diario de nuestros fieles oyentes. </p><br>
+				<p class="text-white font-semibold">También, es una excelente y eficaz alternativa para la promoción de publicidad, asegurando un retorno rápido y eficaz de la inversión y confianza depositada en ésta, la emisora que está “En estado natural”.</p><br>
+			</div>
+			<div>
+
+			</div>
+		
+		</section>
+
+		  <section transition:persist="media-player" >
+			<Player />
+		</section>
+
+	</main>
+</Layout>
+
+
+<style>
+	main{
+		background-image: url(../img/1.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.fuente-especial{
+		font-family: 'Big Shoulders Inline Text Variable', system-ui;
+	}
+</style>

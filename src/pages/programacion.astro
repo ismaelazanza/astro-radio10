@@ -1,0 +1,66 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/CardTarifario.astro';
+import Header from '../components/Header.astro';
+import Player from '../components/Player.astro';
+import '@fontsource-variable/big-shoulders-inline-text';
+---
+
+<Layout title="Radio 10 | Programación.">
+	<main class="flex flex-col justify-between"  transition:animate="fade">
+
+		<header>
+			<Header/>
+		</header>
+
+		<h2 class="text-white text-6xl font-extrabold text-center fuente-especial leading-[7rem]">Programación</h2>
+
+		<section class="grid grid-cols-12 container mx-auto">
+			<div>
+
+			</div>
+			<div class="col-[4/10]">
+				<p class="text-white font-semibold">Radio 10 es un medio de comunicación privado, con carácter: Noticioso - Deportivo y Musical. </p><br>
+                <ul>
+                    <li class="text-white">• Autopista 10 / Lunes a Domingo 00h00 – 04h00</li>
+                    <li class="text-white">• Hits’ 10 / Lunes a Viernes 04h00 – 05h00</li>
+                    <li class="text-white">• 10 revoluciones / Lunes a Viernes 05h00 – 06h30</li>
+                    <li class="text-white">• De Primera / Deportes / Lunes a Viernes 06h30 – 08h00</li>
+                    <li class="text-white">• A otro nivel / Lunes a Viernes 08h00 – 12h00</li>
+                    <li class="text-white">• Noticiero 10 / Noticias I Emisión / Lunes a Viernes 12h00 – 13h00</li>
+                    <li class="text-white">• Tiempo extra / Deportes / Lunes a Viernes 13h00 – 14h00</li>
+                    <li class="text-white">• Sin control / Lunes a Viernes 14h00 – 18h00</li>
+                    <li class="text-white">• Noticiero 10 / Noticias II Emisión / Lunes a Viernes 18h00 – 19h00</li>
+                    <li class="text-white">• Clásicos 10 / Lunes a Viernes 19h00 - 20h00</li>
+                    <li class="text-white">• La noche 10 / Lunes a Viernes 20h00 – 22h00</li>
+                    <li class="text-white">• 10 revoluciones / Lunes a Viernes 22h00 – 24h00</li>
+                </ul><br>
+				<p class="text-white font-semibold">Transmisiones deportivas</p><br>
+				<p class="text-white font-semibold">Transmisión en vivo y en directo del fútbol profesional desde los diferentes estadios del país, con la LigaPro, Copa Libertadores, Copa Sudamericana, Súper Liga Femenina, Eliminatorias Sudamericanas y Ascenso Nacional. El automovilismo también forma parte de nuestros productos </p><br>
+			</div>
+			<div>
+
+			</div>
+		
+		</section>
+
+		  <section transition:persist="media-player" >
+			<Player />
+		</section>
+
+	</main>
+</Layout>
+
+
+<style>
+	main{
+		background-image: url(../img/1.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.fuente-especial{
+		font-family: 'Big Shoulders Inline Text Variable', system-ui;
+	}
+</style>

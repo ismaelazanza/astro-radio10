@@ -1,0 +1,20 @@
+---
+interface Props {
+	title: string;
+	des1?: string;
+	des2?: string;
+	des3?: string;
+	des4?: string;
+}
+
+const { title, des1, des2, des3, des4 } = Astro.props;
+---
+
+<div class="border-2 rounded-md border-[#c4186e]/75 p-10">
+	<h2 class="text-white uppercase font-bold text-xl mb-3">{title}</h2>
+	<p class="text-white font-medium">{des1}</p>
+	<p class="text-white font-medium">{des2}</p>
+	<p class="text-white font-medium">{des3}</p>
+	<p class="text-white font-medium">{des4}</p>
+
+</div>
